@@ -17,16 +17,27 @@ import javax.persistence.Query;
  */
 public class Red {
  EntityManagerFactory emf;
+ /**
+    * atributo que se encarga de la parte de persistencia por medio de querys en el programa
+ */
 EntityManager em;
+ /**
+    * atributo que se encarga de la parte de persistencia por medio de querys en el programa
+  */
 ArrayList<Pedido> AllPedidos = new ArrayList<Pedido>();
-
+/**
+    * Constructor que se encarga de inicializar los objetos asociados con la persistencia 
+    */
 public Red(){
     emf = javax.persistence.Persistence.createEntityManagerFactory("UserRedAppPU");
     em = emf.createEntityManager();
     GetPedidos();
 
 } 
-
+/**
+    * Metodo que se encarga de obtener los pedidos almacenados y 
+    *agregarlos a la lista de pedidos usando querys
+    */
 public  void GetPedidos(){
     AllPedidos.clear();
    Query q1 = em.createQuery("select p from Pedido p");
@@ -36,7 +47,11 @@ public  void GetPedidos(){
             AllPedidos.add(p);
         }
 }
-
+/**
+    *Metodo que obtiene el estado de un pedido
+    *@param ID codigo del pedido
+    *@return si encuentra el pedido, devuelve el estado del pedido
+    */
 public boolean GetPedidoStatus(int ID){
     Pedido n = new Pedido();
     for (int x =0; x<AllPedidos.size();x++){
@@ -47,7 +62,11 @@ public boolean GetPedidoStatus(int ID){
     }
     return false;
 }
-
+/**
+    *Metodo que obtiene los turnos que faltan para terminar el pedido
+    *@param ID codigo del pedido
+    *@return cantidad de turnos que faltan
+    */
 public String GetTurnos(int id){
    Pedido n = new Pedido(); 
    int turnos =0;
