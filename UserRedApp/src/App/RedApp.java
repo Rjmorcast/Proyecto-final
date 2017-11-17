@@ -177,6 +177,7 @@ public class RedApp extends javax.swing.JFrame {
         } else {JOptionPane.showMessageDialog(frame,"Su pedido ya fue completado");}
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    //Borra el textfield en caso de cancelar la operacion.
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         jTextField1.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
