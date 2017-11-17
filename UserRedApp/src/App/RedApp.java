@@ -172,9 +172,13 @@ public class RedApp extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Component frame = null;
-        if (!r.GetPedidoStatus(Integer.parseInt(jTextField1.getText()))){
-            JOptionPane.showMessageDialog(frame,r.GetTurnos(Integer.parseInt(jTextField1.getText())));
-        } else {JOptionPane.showMessageDialog(frame,"Su pedido ya fue completado");}
+        r.GetPedidos(); 
+        if (r.Existe(Integer.parseInt(jTextField1.getText()))){
+            if (!r.GetPedidoStatus(Integer.parseInt(jTextField1.getText()))){
+                JOptionPane.showMessageDialog(frame,r.GetTurnos(Integer.parseInt(jTextField1.getText())));
+            } else {JOptionPane.showMessageDialog(frame,"Su pedido ya fue completado");}
+        } else {JOptionPane.showMessageDialog(frame,"Su pedido no existe en la base de datos");}
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     //Borra el textfield en caso de cancelar la operacion.

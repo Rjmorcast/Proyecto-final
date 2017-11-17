@@ -81,4 +81,16 @@ public String GetTurnos(int id){
     }
    return "";
 }
+
+public boolean Existe(int ID){
+    Pedido n = new Pedido();
+    for (int x =0; x<AllPedidos.size();x++){
+        n = AllPedidos.get(x);
+        if (ID == n.Codigo){
+            return true;
+        }
+    }
+    return false;
+}
+
 }
