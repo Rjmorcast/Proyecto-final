@@ -5,6 +5,7 @@
  */
 package App;
 
+import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JOptionPane;
 
@@ -44,6 +45,11 @@ public class RedApp extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jLabel1.setText("Número de Pedido");
 
@@ -173,6 +179,10 @@ public class RedApp extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         jTextField1.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        this.getContentPane().setBackground(Color.white);
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
