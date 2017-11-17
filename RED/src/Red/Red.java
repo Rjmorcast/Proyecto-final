@@ -228,5 +228,16 @@ public void CompletarPedido (Pedido p){
         }
 }
 
+public String GetNombreProdcuto(int id){
+    Producto n = new Producto();
+    for (int x =0; x<AllProducto.size();x++){
+        n = AllProducto.get(x);
+        if (id == n.Codigo){
+            return n.Nombre;
+        }
+    }
+    return "";
+}
+
 }
 

@@ -367,7 +367,7 @@ public class MainGUI extends javax.swing.JFrame {
         for (int x =0; x<r.AllPedidosExtendido.size();x++){
             p = r.AllPedidosExtendido.get(x);
             if (pedidoconsultado == p.Codigo){
-                model.addRow(new Object[]{p.Producto,p.Cantidad,r.GetPrecio(p.Producto),r.GetSubtotal(p.Cantidad, p.Producto)});
+                model.addRow(new Object[]{r.GetNombreProdcuto(p.Producto),p.Cantidad,r.GetPrecio(p.Producto),r.GetSubtotal(p.Cantidad, p.Producto)});
             }
         }
         PedidoActual = pedidoconsultado;
