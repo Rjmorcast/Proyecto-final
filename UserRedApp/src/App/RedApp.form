@@ -150,14 +150,14 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\esteb\Desktop\ambiente-cafe-4.jpg"/>
+          <Image iconType="3" name="/Images/ambiente-cafe-4.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\esteb\Desktop\download.jpg"/>
+          <Image iconType="3" name="/Images/download.jpg"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
@@ -165,7 +165,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\esteb\Desktop\coca-cola-classic.jpg"/>
+          <Image iconType="3" name="/Images/coca-cola-classic.jpg"/>
         </Property>
       </Properties>
     </Component>

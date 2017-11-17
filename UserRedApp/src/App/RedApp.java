@@ -78,12 +78,12 @@ public class RedApp extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("RED");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\esteb\\Desktop\\ambiente-cafe-4.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ambiente-cafe-4.jpg"))); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\esteb\\Desktop\\download.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/download.jpg"))); // NOI18N
         jLabel4.setToolTipText("");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\esteb\\Desktop\\coca-cola-classic.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/coca-cola-classic.jpg"))); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setText("Revísa cuanto falta para tu entrega:");
