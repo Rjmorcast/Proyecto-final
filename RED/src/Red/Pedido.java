@@ -45,6 +45,10 @@ public class Pedido implements Serializable {
     public Pedido(){}
     /**
     * Constructor de objeto Pedido asignando el valor de Codigo, Carne, Nombre y Complete.
+    *@param Codigo codigo del pedido
+    *@param Carne carne del usuario
+    *@param Nombre nombre del usuario
+    *@param Status estado de la entrega del pedido
     */
       public Pedido(int Codigo, int Carne, String Nombre, boolean Status){
         this.Codigo = Codigo;
