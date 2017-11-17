@@ -21,7 +21,7 @@ public class RedApp extends javax.swing.JFrame {
     Red r = new Red();
     public RedApp() {
         initComponents();
-        //
+        //constructor
     }
 
     /**
